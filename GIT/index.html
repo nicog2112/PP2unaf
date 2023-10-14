@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Comandos de Git</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        pre {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        code {
+            font-family: Consolas, monospace;
+            color: #007bff;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="../TP1/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../TP1/index.html">Inicio</a></li>
+                <li><a href="../ETICA Y CONDUCTA PROFESIONAL DE ACM/index.html">Etica y Conducta Profesional del ACM</a></li>
+                <li><a href="../CV/CV.html">Curriculum Vitae</a></li>
+                <li><a href="../PERFIL TECNICO/index.html">Rol del Téc. Sup. Des. de Software.</a></li>
+                <li class="current-page"><a href="index.html">GIT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1><img src="logoGit.png" alt="Git Logo"> Comandos de Git</h1>
+
+    <h2>git status</h2>
+    <p>El comando <code>git status</code> te proporciona información sobre el estado actual de tu repositorio Git. Te muestra qué archivos están en el área de trabajo (working directory) y si han sido modificados, agregados al área de preparación (staging area) o si están listos para ser confirmados (committed).</p>
+    <pre>
+<code>
+    git status
+</code>
+<div style="align-items: center; text-align: center;">
+    <img src="gitStatus.png" alt="Git Logo" style="width: 500px; height: 500px;align-items: center;">
+</div>
+
+    </pre>
+
+    <h2>git add</h2>
+    <p>El comando <code>git add</code> se utiliza para agregar cambios realizados en los archivos al área de preparación (staging area). Estos cambios se preparan para ser confirmados en el próximo commit.</p>
+    <pre>
+<code>
+    git add &lt;nombre_del_archivo&gt;
+</code>
+<div style="align-items: center; text-align: center;">
+    <img src="gitAdd.png" alt="Git Logo" style="width: 500px; height: 500px;align-items: center;">
+</div>
+    </pre>
+
+    <h2>git pull</h2>
+    <p>El comando <code>git pull</code> se utiliza para obtener (fetch) y fusionar (merge) los cambios desde un repositorio remoto en tu rama actual. Básicamente, actualiza tu copia local del repositorio con los cambios más recientes del repositorio remoto.</p>
+    <pre>
+<code>
+    git pull origin &lt;nombre_de_la_rama&gt;
+</code>
+    </pre>
+
+    <h2>git push</h2>
+    <p>El comando <code>git push</code> se utiliza para enviar (push) los cambios confirmados desde tu repositorio local a un repositorio remoto. Esto actualiza el repositorio remoto con tus cambios locales.</p>
+    <pre>
+<code>
+    git push origin &lt;nombre_de_la_rama&gt;
+</code>
+    </pre>
+
+</body>
+
+</html>
+
